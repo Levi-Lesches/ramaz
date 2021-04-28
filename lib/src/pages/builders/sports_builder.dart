@@ -234,12 +234,12 @@ class SportBuilderState extends ModelListener<
 					]
 				),
 				const SizedBox(height: 20),
-				SportsTile(
+				if (model.ready) SportsTile(
 					model.game,
 					onTap: () async => model.scores = 
 						await SportsScoreUpdater.updateScores(context, model.game) 
 							?? model.scores
-				),
+			),
 				ButtonBar(
 					children: [
 						TextButton(
