@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the NavigationItem class from the widgets library, for the Dart programming language.">
+  <title>NavigationItem class - widgets library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../static-assets/github.css">
+  <link rel="stylesheet" href="../static-assets/styles.css">
+  <link rel="icon" href="../static-assets/favicon.png">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">ramaz</a></li>
+    <li><a href="../widgets/widgets-library.html">widgets</a></li>
+    <li class="self-crumb">NavigationItem<span class="signature">&lt;<wbr><span class="type-parameter">M extends <a href="https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html">ChangeNotifier</a></span>&gt;</span> abstract class</li>
+  </ol>
+  <div class="self-name">NavigationItem</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/Levi-Lesches/Ramaz-Student-Life/blob/master/lib/src/widgets/responsive_scaffold/navigation_item.dart#L7"><i class="material-icons">description</i></a></div>
+<h1><span class="kind-class">NavigationItem&lt;<wbr><span class="type-parameter">M extends ChangeNotifier</span>&gt;</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Defines a common interface for <a href="https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html">BottomNavigationBar</a> and <a href="https://api.flutter.dev/flutter/material/NavigationRail-class.html">NavigationRail</a>.</p>
+<p>This class maps to both <a href="https://api.flutter.dev/flutter/widgets/BottomNavigationBarItem-class.html">BottomNavigationBarItem</a> and 
+<a href="https://api.flutter.dev/flutter/material/NavigationRailDestination-class.html">NavigationRailDestination</a> with an <a href="../widgets/NavigationItem/icon.html">icon</a> and <a href="../widgets/NavigationItem/label.html">label</a> property.</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+        <dt>Implementers</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../pages/ResponsiveReminders-class.html">ResponsiveReminders</a></li>
+          <li><a href="../pages/ResponsiveSchedule-class.html">ResponsiveSchedule</a></li>
+        </ul></dd>
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="NavigationItem" class="callable">
+          <span class="name"><a href="../widgets/NavigationItem/NavigationItem.html">NavigationItem</a></span><span class="signature">(<span class="parameter" id="-param-icon">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">icon</span>, </span><span class="parameter" id="-param-label"><span>required</span> <span class="type-annotation">String</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="-param-model"><span class="type-annotation">M?</span> <span class="parameter-name">model</span>, </span><span class="parameter" id="-param-shouldDispose"><span class="type-annotation">bool</span> <span class="parameter-name">shouldDispose</span> = <span class="default-value">true</span>}</span>)</span>
+        </dt>
+        <dd>
+          Creates an abstraction for a navigation item. 
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="appBar" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/appBar.html">appBar</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/material/AppBar-class.html">AppBar</a></span> 
+
+</dt>
+<dd>
+  The app bar for this page. 
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="bottomNavBar" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/bottomNavBar.html">bottomNavBar</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/BottomNavigationBarItem-class.html">BottomNavigationBarItem</a></span> 
+
+</dt>
+<dd>
+  Generates an item for <a href="https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html">BottomNavigationBar</a>. 
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="floatingActionButton" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/floatingActionButton.html">floatingActionButton</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> 
+
+</dt>
+<dd>
+  The FAB for this page. 
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="floatingActionButtonLocation" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/floatingActionButtonLocation.html">floatingActionButtonLocation</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/material/FloatingActionButtonLocation-class.html">FloatingActionButtonLocation</a>?</span> 
+
+</dt>
+<dd>
+  The FAB location for this page. 
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="../widgets/NavigationItem/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; int</span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="../widgets/NavigationItem/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="icon" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/icon.html">icon</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span> 
+
+</dt>
+<dd>
+  The icon for this item. 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="label" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/label.html">label</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+  The label for this item. <a href="../widgets/NavigationItem/label.html">[...]</a>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="model" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/model.html">model</a></span>
+  <span class="signature">&#8596; M?</span> 
+
+</dt>
+<dd>
+  The data model for this page, if any. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="navRail" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/navRail.html">navRail</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/material/NavigationRailDestination-class.html">NavigationRailDestination</a></span> 
+
+</dt>
+<dd>
+  Generates an item for <a href="https://api.flutter.dev/flutter/material/NavigationRail-class.html">NavigationRail</a>. 
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="../widgets/NavigationItem/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; Type</span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="shouldDispose" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/shouldDispose.html">shouldDispose</a></span>
+  <span class="signature">&#8596; bool</span> 
+
+</dt>
+<dd>
+  Whether this item's data model should be disposed. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="sideSheet" class="property">
+  <span class="name"><a href="../widgets/NavigationItem/sideSheet.html">sideSheet</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> 
+
+</dt>
+<dd>
+  The side sheet for this page. 
+  <div class="features">read-only</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="build" class="callable">
+  <span class="name"><a href="../widgets/NavigationItem/build.html">build</a></span><span class="signature">(<wbr><span class="parameter" id="build-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  The main content on the page. 
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="../widgets/NavigationItem/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="../widgets/NavigationItem/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="../widgets/NavigationItem/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="../widgets/NavigationItem/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="../widgets/NavigationItem/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">Object</span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="../widgets/NavigationItem/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">ramaz</a></li>
+  <li><a href="../widgets/widgets-library.html">widgets</a></li>
+  <li class="self-crumb">NavigationItem<span class="signature">&lt;<wbr><span class="type-parameter">M extends <a href="https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html">ChangeNotifier</a></span>&gt;</span> abstract class</li>
+</ol>
+
+
+    <h5>widgets library</h5>
+    <ol>
+  <li class="section-title"><a href="../widgets/widgets-library.html#classes">Classes</a></li>
+  <li><a href="../widgets/ActivityTile-class.html">ActivityTile</a></li>
+  <li><a href="../widgets/BrightnessChanger-class.html">BrightnessChanger</a></li>
+  <li><a href="../widgets/BrightnessChangerState-class.html">BrightnessChangerState</a></li>
+  <li><a href="../widgets/CalendarTile-class.html">CalendarTile</a></li>
+  <li><a href="../widgets/ClassList-class.html">ClassList</a></li>
+  <li><a href="../widgets/ClassListState-class.html">ClassListState</a></li>
+  <li><a href="../widgets/ClassPanel-class.html">ClassPanel</a></li>
+  <li><a href="../widgets/Footer-class.html">Footer</a></li>
+  <li><a href="../widgets/FooterState-class.html">FooterState</a></li>
+  <li><a href="../widgets/LayoutInfo-class.html">LayoutInfo</a></li>
+  <li><a href="../widgets/LinkIcon-class.html">LinkIcon</a></li>
+  <li><a href="../widgets/LoadingImage-class.html">LoadingImage</a></li>
+  <li><a href="../widgets/LoadingImageState-class.html">LoadingImageState</a></li>
+  <li><a href="../widgets/Logos-class.html">Logos</a></li>
+  <li><a href="../widgets/ModelListener-class.html">ModelListener</a></li>
+  <li><a href="../widgets/NavigationItem-class.html">NavigationItem</a></li>
+  <li><a href="../widgets/NextClass-class.html">NextClass</a></li>
+  <li><a href="../widgets/RamazLogos-class.html">RamazLogos</a></li>
+  <li><a href="../widgets/ReminderTile-class.html">ReminderTile</a></li>
+  <li><a href="../widgets/ResponsiveBuilder-class.html">ResponsiveBuilder</a></li>
+  <li><a href="../widgets/ResponsiveScaffold-class.html">ResponsiveScaffold</a></li>
+  <li><a href="../widgets/ResponsiveScaffoldState-class.html">ResponsiveScaffoldState</a></li>
+  <li><a href="../widgets/ScoreUpdaterState-class.html">ScoreUpdaterState</a></li>
+  <li><a href="../widgets/SpecialTile-class.html">SpecialTile</a></li>
+  <li><a href="../widgets/SportsIcons-class.html">SportsIcons</a></li>
+  <li><a href="../widgets/SportsScoreUpdater-class.html">SportsScoreUpdater</a></li>
+  <li><a href="../widgets/SportsStats-class.html">SportsStats</a></li>
+  <li><a href="../widgets/SportsTile-class.html">SportsTile</a></li>
+  <li><a href="../widgets/ThemeChanger-class.html">ThemeChanger</a></li>
+  <li><a href="../widgets/ThemeChangerState-class.html">ThemeChangerState</a></li>
+
+
+
+
+
+  <li class="section-title"><a href="../widgets/widgets-library.html#functions">Functions</a></li>
+  <li><a href="../widgets/caseConverter.html">caseConverter</a></li>
+  <li><a href="../widgets/pickDate.html">pickDate</a></li>
+
+  <li class="section-title"><a href="../widgets/widgets-library.html#enums">Enums</a></li>
+  <li><a href="../widgets/BrightnessChangerForm-class.html">BrightnessChangerForm</a></li>
+
+  <li class="section-title"><a href="../widgets/widgets-library.html#typedefs">Typedefs</a></li>
+  <li><a href="../widgets/ResponsiveWidgetBuilder.html">ResponsiveWidgetBuilder</a></li>
+  <li><a href="../widgets/ThemeBuilder.html">ThemeBuilder</a></li>
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../widgets/NavigationItem-class.html#constructors">Constructors</a></li>
+    <li><a href="../widgets/NavigationItem/NavigationItem.html">NavigationItem</a></li>
+
+
+    <li class="section-title">
+      <a href="../widgets/NavigationItem-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../widgets/NavigationItem/appBar.html">appBar</a></li>
+    <li><a href="../widgets/NavigationItem/bottomNavBar.html">bottomNavBar</a></li>
+    <li><a href="../widgets/NavigationItem/floatingActionButton.html">floatingActionButton</a></li>
+    <li><a href="../widgets/NavigationItem/floatingActionButtonLocation.html">floatingActionButtonLocation</a></li>
+    <li class="inherited"><a href="../widgets/NavigationItem/hashCode.html">hashCode</a></li>
+    <li><a href="../widgets/NavigationItem/icon.html">icon</a></li>
+    <li><a href="../widgets/NavigationItem/label.html">label</a></li>
+    <li><a href="../widgets/NavigationItem/model.html">model</a></li>
+    <li><a href="../widgets/NavigationItem/navRail.html">navRail</a></li>
+    <li class="inherited"><a href="../widgets/NavigationItem/runtimeType.html">runtimeType</a></li>
+    <li><a href="../widgets/NavigationItem/shouldDispose.html">shouldDispose</a></li>
+    <li><a href="../widgets/NavigationItem/sideSheet.html">sideSheet</a></li>
+
+    <li class="section-title"><a href="../widgets/NavigationItem-class.html#instance-methods">Methods</a></li>
+    <li><a href="../widgets/NavigationItem/build.html">build</a></li>
+    <li class="inherited"><a href="../widgets/NavigationItem/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../widgets/NavigationItem/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../widgets/NavigationItem-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../widgets/NavigationItem/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    ramaz
+      2.1.1+1
+  </span>
+
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js"></script>
+<script src="../static-assets/script.js"></script>
+
+
+
+</body>
+
+</html>
+
