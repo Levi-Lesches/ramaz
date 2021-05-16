@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Database class from the ramaz_services library, for the Dart programming language.">
+  <title>Database class - ramaz_services library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../static-assets/github.css">
+  <link rel="stylesheet" href="../static-assets/styles.css">
+  <link rel="icon" href="../static-assets/favicon.png">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">ramaz</a></li>
+    <li><a href="../ramaz_services/ramaz_services-library.html">ramaz_services</a></li>
+    <li class="self-crumb">Database class</li>
+  </ol>
+  <div class="self-name">Database</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/Levi-Lesches/Ramaz-Student-Life/blob/master/lib/src/services/database.dart#L31"><i class="material-icons">description</i></a></div>
+<h1><span class="kind-class">Database</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>A wrapper around all data in all database.</p>
+<p>The database is split into 2N parts: N types of data, with a Firestore and 
+IDB implementation for each. The local and cloud implementations are bundled
+into <code>HybridDatabase</code>s, which we use here.</p>
+<p>This is the only class that brings the <a href="../ramaz_services/Service-class.html">Service</a> paradigm into the database
+realm, so any and all initialization must be done here. Each database is 
+allowed to implement a <a href="../ramaz_services/Database/signIn.html">signIn</a> method, which will be called here. If data 
+needs to be downloaded and cached, that's where it will be done.</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a href="../ramaz_services/Service-class.html">Service</a></li>
+          <li><a href="../ramaz_services/DatabaseService-class.html">DatabaseService</a></li>
+          <li>Database</li>
+        </ul></dd>
+
+
+
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Database" class="callable">
+          <span class="name"><a href="../ramaz_services/Database/Database.html">Database</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+           
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="calendar" class="property">
+  <span class="name"><a href="../ramaz_services/Database/calendar.html">calendar</a></span>
+  <span class="signature">&#8594; <a href="../ramaz_services/HybridCalendar-class.html">HybridCalendar</a></span> 
+
+</dt>
+<dd>
+  The calendar data manager. 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="firestore" class="property">
+  <span class="name"><a href="../ramaz_services/Database/firestore.html">firestore</a></span>
+  <span class="signature">&#8594; Firestore</span> 
+
+</dt>
+<dd>
+  The cloud database, using Firebase's Cloud Firestore. 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="../ramaz_services/Service/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; int</span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="../ramaz_services/Service/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="idb" class="property">
+  <span class="name"><a href="../ramaz_services/Database/idb.html">idb</a></span>
+  <span class="signature">&#8594; Idb</span> 
+
+</dt>
+<dd>
+  The local database. 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="reminders" class="property">
+  <span class="name"><a href="../ramaz_services/Database/reminders.html">reminders</a></span>
+  <span class="signature">&#8594; <a href="../ramaz_services/HybridReminders-class.html">HybridReminders</a></span> 
+
+</dt>
+<dd>
+  The reminders data manager. 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="../ramaz_services/Service/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; Type</span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="schedule" class="property">
+  <span class="name"><a href="../ramaz_services/Database/schedule.html">schedule</a></span>
+  <span class="signature">&#8594; <a href="../ramaz_services/HybridSchedule-class.html">HybridSchedule</a></span> 
+
+</dt>
+<dd>
+  The schedule data manager 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="sports" class="property">
+  <span class="name"><a href="../ramaz_services/Database/sports.html">sports</a></span>
+  <span class="signature">&#8594; <a href="../ramaz_services/HybridSports-class.html">HybridSports</a></span> 
+
+</dt>
+<dd>
+  The sports data manager. 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="user" class="property">
+  <span class="name"><a href="../ramaz_services/Database/user.html">user</a></span>
+  <span class="signature">&#8594; <a href="../ramaz_services/HybridUser-class.html">HybridUser</a></span> 
+
+</dt>
+<dd>
+  The user data manager. 
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="init" class="callable">
+  <span class="name"><a href="../ramaz_services/Database/init.html">init</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Initializes the service. <a href="../ramaz_services/Database/init.html">[...]</a>
+  <div class="features">override</div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="../ramaz_services/Service/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="../ramaz_services/Service/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="signIn" class="callable">
+  <span class="name"><a href="../ramaz_services/Database/signIn.html">signIn</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  A callback that runs when the user signs in. <a href="../ramaz_services/Database/signIn.html">[...]</a>
+  <div class="features">override</div>
+
+</dd>
+
+        <dt id="signOut" class="callable">
+  <span class="name"><a href="../ramaz_services/Database/signOut.html">signOut</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Provides the database a chance to unlink all data from the user. 
+  <div class="features">override</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="../ramaz_services/Service/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="../ramaz_services/Service/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="../ramaz_services/Service/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">Object</span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="../ramaz_services/Service/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">ramaz</a></li>
+  <li><a href="../ramaz_services/ramaz_services-library.html">ramaz_services</a></li>
+  <li class="self-crumb">Database class</li>
+</ol>
+
+
+    <h5>ramaz_services library</h5>
+    <ol>
+  <li class="section-title"><a href="../ramaz_services/ramaz_services-library.html#classes">Classes</a></li>
+  <li><a href="../ramaz_services/Auth-class.html">Auth</a></li>
+  <li><a href="../ramaz_services/Crashlytics-class.html">Crashlytics</a></li>
+  <li><a href="../ramaz_services/Database-class.html">Database</a></li>
+  <li><a href="../ramaz_services/DatabaseService-class.html">DatabaseService</a></li>
+  <li><a href="../ramaz_services/FirebaseCore-class.html">FirebaseCore</a></li>
+  <li><a href="../ramaz_services/HybridCalendar-class.html">HybridCalendar</a></li>
+  <li><a href="../ramaz_services/HybridReminders-class.html">HybridReminders</a></li>
+  <li><a href="../ramaz_services/HybridSchedule-class.html">HybridSchedule</a></li>
+  <li><a href="../ramaz_services/HybridSports-class.html">HybridSports</a></li>
+  <li><a href="../ramaz_services/HybridUser-class.html">HybridUser</a></li>
+  <li><a href="../ramaz_services/Notification-class.html">Notification</a></li>
+  <li><a href="../ramaz_services/Notifications-class.html">Notifications</a></li>
+  <li><a href="../ramaz_services/Preferences-class.html">Preferences</a></li>
+  <li><a href="../ramaz_services/PushNotifications-class.html">PushNotifications</a></li>
+  <li><a href="../ramaz_services/Service-class.html">Service</a></li>
+  <li><a href="../ramaz_services/Services-class.html">Services</a></li>
+
+
+
+
+
+
+
+  <li class="section-title"><a href="../ramaz_services/ramaz_services-library.html#typedefs">Typedefs</a></li>
+  <li><a href="../ramaz_services/AsyncCallback.html">AsyncCallback</a></li>
+
+  <li class="section-title"><a href="../ramaz_services/ramaz_services-library.html#exceptions">Exceptions</a></li>
+  <li><a href="../ramaz_services/NoAccountException-class.html">NoAccountException</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../ramaz_services/Database-class.html#constructors">Constructors</a></li>
+    <li><a href="../ramaz_services/Database/Database.html">Database</a></li>
+
+
+    <li class="section-title">
+      <a href="../ramaz_services/Database-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../ramaz_services/Database/calendar.html">calendar</a></li>
+    <li><a href="../ramaz_services/Database/firestore.html">firestore</a></li>
+    <li class="inherited"><a href="../ramaz_services/Service/hashCode.html">hashCode</a></li>
+    <li><a href="../ramaz_services/Database/idb.html">idb</a></li>
+    <li><a href="../ramaz_services/Database/reminders.html">reminders</a></li>
+    <li class="inherited"><a href="../ramaz_services/Service/runtimeType.html">runtimeType</a></li>
+    <li><a href="../ramaz_services/Database/schedule.html">schedule</a></li>
+    <li><a href="../ramaz_services/Database/sports.html">sports</a></li>
+    <li><a href="../ramaz_services/Database/user.html">user</a></li>
+
+    <li class="section-title"><a href="../ramaz_services/Database-class.html#instance-methods">Methods</a></li>
+    <li><a href="../ramaz_services/Database/init.html">init</a></li>
+    <li class="inherited"><a href="../ramaz_services/Service/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../ramaz_services/Database/signIn.html">signIn</a></li>
+    <li><a href="../ramaz_services/Database/signOut.html">signOut</a></li>
+    <li class="inherited"><a href="../ramaz_services/Service/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../ramaz_services/Database-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../ramaz_services/Service/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    ramaz
+      2.1.1+1
+  </span>
+
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js"></script>
+<script src="../static-assets/script.js"></script>
+
+
+
+</body>
+
+</html>
+
