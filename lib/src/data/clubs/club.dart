@@ -9,6 +9,12 @@ class Club {
 	/// The name of the club. 
 	final String name;
 
+	/// The random id assigned to the club to identify it.
+	final String id;
+
+	/// Approval status of the club.
+	bool? isApproved;
+
 	/// A short description of the club. 
 	final String shortDescription;
 
@@ -31,22 +37,35 @@ class Club {
 	final List<Message> messages;
 
 	/// A list of attendance for each member of the club.
-	final Map<String, int> attendance;
+	final Map<ContactInfo, int> attendance;
 
 	/// The captains of the club.
 	final List<ContactInfo> captains;
 
 	/// The faculty advisor for this club.
-	final ContactInfo facultyAdvisor;
+	final List<ContactInfo> facultyAdvisor;
+
+	/// Var should be day of the week the club meets and time they meet.
+	DateTime normalMeetingTime;
+
+	///  Should be the date the special  time applies to or the date the club
+	///  won't meet. The first [DateTime] is the date the second [DateTime] must
+	///  be the meeting time. The second [DateTime] should be null if it is a
+	///  week which the club will not meet.
+	Map<DateTime,DateTime?> editedMeetingTimes;
 
 	/// Creates a new club.
 	Club({
 		required this.name,
+		required this.isApproved,
+		required this.id,
 		required this.shortDescription,
 		required this.description,
 		required this.phoneNumberRequested,
 		required this.captains,
 		required this.facultyAdvisor,
+		required this.normalMeetingTime,
+		required this.editedMeetingTimes,
 		required this.image,
 		this.formUrl,
 	}) : 
